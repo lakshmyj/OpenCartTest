@@ -29,7 +29,7 @@ public class MyAccountPageTest extends BaseClass{
 		homepage = new HomePage();
 		homepage.clickMyAccountOptions();
 		accountloginpage = homepage.clickOnLoginOption();
-		//myaccountpage = accountloginpage.login(propFile.getProperty("username"), propFile.getProperty("password"));
+		myaccountpage = accountloginpage.login(propFile.getProperty("username"), propFile.getProperty("password"));
 	}
 	
 	@Test

@@ -1,17 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-18T12:46:17 PDT" name="Default suite" finished-at="2025-04-18T12:46:59 PDT" duration-ms="42147">
+  <suite started-at="2025-04-19T00:52:24 PDT" name="opencart Test Suite" finished-at="2025-04-19T00:53:17 PDT" duration-ms="52931">
     <groups>
     </groups>
-    <test started-at="2025-04-18T12:46:17 PDT" name="Default test" finished-at="2025-04-18T12:46:59 PDT" duration-ms="42147">
-      <class name="com.qa.testcases.AccountLoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.AccountLoginPageTest@6e6f2380]" started-at="2025-04-18T12:46:18 PDT" name="setUp" finished-at="2025-04-18T12:46:24 PDT" duration-ms="5902" status="PASS">
+    <test started-at="2025-04-19T00:52:24 PDT" name="All Test" finished-at="2025-04-19T00:53:17 PDT" duration-ms="52931">
+      <class name="com.qa.testcases.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.HomePageTest@1530c739]" started-at="2025-04-19T00:52:24 PDT" name="setUp" finished-at="2025-04-19T00:52:28 PDT" duration-ms="3681" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.qa.testcases.AccountLoginPageTest@6e6f2380]" started-at="2025-04-18T12:46:24 PDT" name="loginTest" data-provider="getLoginTestData" finished-at="2025-04-18T12:46:35 PDT" duration-ms="10667" status="PASS">
+        <test-method signature="homePageTitleTest()[pri:0, instance:com.qa.testcases.HomePageTest@1530c739]" started-at="2025-04-19T00:52:28 PDT" name="homePageTitleTest" finished-at="2025-04-19T00:52:28 PDT" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testcases.HomePageTest@1530c739]" started-at="2025-04-19T00:52:28 PDT" name="tearDown" finished-at="2025-04-19T00:52:29 PDT" duration-ms="974" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.testcases.HomePageTest -->
+      <class name="com.qa.testcases.MyAccountPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.MyAccountPageTest@35dab4eb]" started-at="2025-04-19T00:53:10 PDT" name="setUp" finished-at="2025-04-19T00:53:14 PDT" duration-ms="4167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="myAccountsPageTitleTest()[pri:0, instance:com.qa.testcases.MyAccountPageTest@35dab4eb]" started-at="2025-04-19T00:53:14 PDT" name="myAccountsPageTitleTest" finished-at="2025-04-19T00:53:16 PDT" duration-ms="2025" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myAccountsPageTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testcases.MyAccountPageTest@35dab4eb]" started-at="2025-04-19T00:53:16 PDT" name="tearDown" finished-at="2025-04-19T00:53:17 PDT" duration-ms="887" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.testcases.MyAccountPageTest -->
+      <class name="com.qa.testcases.AccountLoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.AccountLoginPageTest@8519cb4]" started-at="2025-04-19T00:52:30 PDT" name="setUp" finished-at="2025-04-19T00:52:34 PDT" duration-ms="4390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.qa.testcases.AccountLoginPageTest@8519cb4]" started-at="2025-04-19T00:52:34 PDT" name="loginTest" data-provider="getLoginTestData" finished-at="2025-04-19T00:52:45 PDT" duration-ms="10825" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -32,15 +60,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testcases.AccountLoginPageTest@6e6f2380]" started-at="2025-04-18T12:46:35 PDT" name="tearDown" finished-at="2025-04-18T12:46:36 PDT" duration-ms="886" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testcases.AccountLoginPageTest@8519cb4]" started-at="2025-04-19T00:52:45 PDT" name="tearDown" finished-at="2025-04-19T00:52:46 PDT" duration-ms="1207" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.AccountLoginPageTest@6e6f2380]" started-at="2025-04-18T12:46:36 PDT" name="setUp" finished-at="2025-04-18T12:46:40 PDT" duration-ms="4006" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.AccountLoginPageTest@8519cb4]" started-at="2025-04-19T00:52:46 PDT" name="setUp" finished-at="2025-04-19T00:52:51 PDT" duration-ms="4855" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.qa.testcases.AccountLoginPageTest@6e6f2380]" started-at="2025-04-18T12:46:40 PDT" name="loginTest" data-provider="getLoginTestData" finished-at="2025-04-18T12:46:42 PDT" duration-ms="2122" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.qa.testcases.AccountLoginPageTest@8519cb4]" started-at="2025-04-19T00:52:51 PDT" name="loginTest" data-provider="getLoginTestData" finished-at="2025-04-19T00:52:53 PDT" duration-ms="1816" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -61,15 +89,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testcases.AccountLoginPageTest@6e6f2380]" started-at="2025-04-18T12:46:42 PDT" name="tearDown" finished-at="2025-04-18T12:46:43 PDT" duration-ms="1325" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testcases.AccountLoginPageTest@8519cb4]" started-at="2025-04-19T00:52:53 PDT" name="tearDown" finished-at="2025-04-19T00:52:54 PDT" duration-ms="1039" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.AccountLoginPageTest@6e6f2380]" started-at="2025-04-18T12:46:43 PDT" name="setUp" finished-at="2025-04-18T12:46:47 PDT" duration-ms="4363" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.AccountLoginPageTest@8519cb4]" started-at="2025-04-19T00:52:54 PDT" name="setUp" finished-at="2025-04-19T00:52:58 PDT" duration-ms="4198" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.qa.testcases.AccountLoginPageTest@6e6f2380]" started-at="2025-04-18T12:46:47 PDT" name="loginTest" data-provider="getLoginTestData" finished-at="2025-04-18T12:46:58 PDT" duration-ms="10693" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.qa.testcases.AccountLoginPageTest@8519cb4]" started-at="2025-04-19T00:52:58 PDT" name="loginTest" data-provider="getLoginTestData" finished-at="2025-04-19T00:53:09 PDT" duration-ms="10517" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -90,11 +118,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testcases.AccountLoginPageTest@6e6f2380]" started-at="2025-04-18T12:46:58 PDT" name="tearDown" finished-at="2025-04-18T12:46:59 PDT" duration-ms="1259" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testcases.AccountLoginPageTest@8519cb4]" started-at="2025-04-19T00:53:09 PDT" name="tearDown" finished-at="2025-04-19T00:53:10 PDT" duration-ms="1028" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.testcases.AccountLoginPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- All Test -->
+  </suite> <!-- opencart Test Suite -->
 </testng-results>

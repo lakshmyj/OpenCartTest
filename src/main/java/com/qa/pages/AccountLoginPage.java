@@ -1,15 +1,11 @@
 package com.qa.pages;
 
-import java.time.Duration;
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.qa.base.BaseClass;
-import com.qa.util.TestUtils;
 
 public class AccountLoginPage extends BaseClass{
 
@@ -37,7 +33,7 @@ public class AccountLoginPage extends BaseClass{
 		return driver.getTitle();
 	}
 	
-	public MyAccountPage login(String uname,String password) throws InterruptedException
+	public MyAccountPage login(String uname,String password)
 	{
 		//System.out.println("acclogin page login "+"uname "+uname+" password "+password);
 		login_email.sendKeys(uname);
