@@ -7,6 +7,7 @@ import java.util.Date;
 import java.util.List;
 
 import org.testng.ITestListener;
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 
@@ -58,13 +59,15 @@ public class ExtentReportListener implements ITestListener{
 	
 	public void onTestFailure(ITestResult result)
 	{
+		WebDriver driver = BaseClass.getDriver();
 		extentTest = extentReport.createTest(result.getClass().getName());
 		extentTest.assignCategory(result.getMethod().getGroups());
 		extentTest.log(Status.FAIL,result.getName()+" got failed");
 		extentTest.log(Status.INFO,result.getThrowable().getMessage());
 		try
 		{
-			String imgPath = TestUtils.captureScreen(result.getName());
+			//String imgPath = TestUtils.captureScreen(result.getName());
+			String imgPath = TestUtils.takeScreenShot(driver,result.getName());
 			extentTest.addScreenCaptureFromPath(imgPath);
 		}
 		catch(Exception e)

@@ -1,0 +1,37 @@
+21:29:54.416 [main] INFO  com.qa.util.MySeleniumListener - Sent keys [Ljava.lang.CharSequence;@285a4fe3 to element: [[ChromeDriver: chrome on windows (f01fb0c820aa0416cfeee499617c467e)] -> id: input-password]
+21:29:54.436 [main] INFO  com.qa.util.MySeleniumListener - Finding element By.xpath: //button[normalize-space()='Login']
+21:29:54.473 [main] INFO  com.qa.util.MySeleniumListener - Found element By.xpath: //button[normalize-space()='Login']
+21:29:54.512 [main] INFO  com.qa.util.MySeleniumListener - Finding element By.xpath: //button[normalize-space()='Login']
+21:29:54.563 [main] INFO  com.qa.util.MySeleniumListener - Found element By.xpath: //button[normalize-space()='Login']
+21:29:54.678 [main] INFO  com.qa.util.MySeleniumListener - Finding element By.xpath: //div[@id='content']/h1
+21:29:56.308 [main] INFO  com.qa.util.MySeleniumListener - Found element By.xpath: //div[@id='content']/h1
+21:29:56.456 [main] INFO  com.qa.util.MySeleniumListener - Finding element By.xpath: //div[@id='content']/h1
+21:29:56.489 [main] INFO  com.qa.util.MySeleniumListener - Found element By.xpath: //div[@id='content']/h1
+21:30:02.997 [main] INFO  com.qa.util.MySeleniumListener - Finding element By.xpath: //span[normalize-space()='My Account']
+21:30:03.094 [main] INFO  com.qa.util.MySeleniumListener - Found element By.xpath: //span[normalize-space()='My Account']
+21:30:03.097 [main] INFO  com.qa.util.MySeleniumListener - Trying to click on: [[ChromeDriver: chrome on windows (28a365b86c29ce85613fce1ffc8c4e3a)] -> xpath: //span[normalize-space()='My Account']]
+21:30:03.403 [main] INFO  com.qa.util.MySeleniumListener - Finding element By.xpath: //a[normalize-space()='Login']
+21:30:03.447 [main] INFO  com.qa.util.MySeleniumListener - Found element By.xpath: //a[normalize-space()='Login']
+21:30:03.448 [main] INFO  com.qa.util.MySeleniumListener - Trying to click on: [[ChromeDriver: chrome on windows (28a365b86c29ce85613fce1ffc8c4e3a)] -> xpath: //a[normalize-space()='Login']]
+21:30:04.830 [main] INFO  com.qa.util.MySeleniumListener - Finding element By.id: input-email
+21:30:04.880 [main] INFO  com.qa.util.MySeleniumListener - Found element By.id: input-email
+21:30:04.880 [main] INFO  com.qa.util.MySeleniumListener - Sending keys [Ljava.lang.CharSequence;@289f15e9 to element: [[ChromeDriver: chrome on windows (28a365b86c29ce85613fce1ffc8c4e3a)] -> id: input-email]
+21:30:05.174 [main] INFO  com.qa.util.MySeleniumListener - Sent keys [Ljava.lang.CharSequence;@289f15e9 to element: [[ChromeDriver: chrome on windows (28a365b86c29ce85613fce1ffc8c4e3a)] -> id: input-email]
+21:30:05.174 [main] INFO  com.qa.util.MySeleniumListener - Finding element By.id: input-password
+21:30:05.226 [main] INFO  com.qa.util.MySeleniumListener - Found element By.id: input-password
+21:30:05.227 [main] INFO  com.qa.util.MySeleniumListener - Sending keys [Ljava.lang.CharSequence;@66713605 to element: [[ChromeDriver: chrome on windows (28a365b86c29ce85613fce1ffc8c4e3a)] -> id: input-password]
+21:30:05.454 [main] INFO  com.qa.util.MySeleniumListener - Sent keys [Ljava.lang.CharSequence;@66713605 to element: [[ChromeDriver: chrome on windows (28a365b86c29ce85613fce1ffc8c4e3a)] -> id: input-password]
+21:30:05.455 [main] INFO  com.qa.util.MySeleniumListener - Finding element By.xpath: //button[normalize-space()='Login']
+21:30:05.491 [main] INFO  com.qa.util.MySeleniumListener - Found element By.xpath: //button[normalize-space()='Login']
+21:30:05.516 [main] INFO  com.qa.util.MySeleniumListener - Finding element By.xpath: //button[normalize-space()='Login']
+21:30:05.553 [main] INFO  com.qa.util.MySeleniumListener - Found element By.xpath: //button[normalize-space()='Login']
+21:30:05.626 [main] INFO  com.qa.util.MySeleniumListener - Finding element By.xpath: //div[@id='content']/h1
+21:30:21.364 [main] INFO  com.qa.util.MySeleniumListener - Finding element By.xpath: //span[normalize-space()='My Account']
+21:30:21.435 [main] INFO  com.qa.util.MySeleniumListener - Found element By.xpath: //span[normalize-space()='My Account']
+21:30:21.438 [main] INFO  com.qa.util.MySeleniumListener - Trying to click on: [[ChromeDriver: chrome on windows (342d3d71a6dc740f9a045135862d3e12)] -> xpath: //span[normalize-space()='My Account']]
+21:30:21.634 [main] INFO  com.qa.util.MySeleniumListener - Finding element By.xpath: //a[normalize-space()='Login']
+21:30:21.673 [main] INFO  com.qa.util.MySeleniumListener - Found element By.xpath: //a[normalize-space()='Login']
+21:30:21.675 [main] INFO  com.qa.util.MySeleniumListener - Trying to click on: [[ChromeDriver: chrome on windows (342d3d71a6dc740f9a045135862d3e12)] -> xpath: //a[normalize-space()='Login']]
+21:30:22.662 [main] INFO  com.qa.util.MySeleniumListener - Finding element By.id: input-email
+21:30:22.698 [main] INFO  com.qa.util.MySeleniumListener - Found element By.id: input-email
+21:30:22.699 [main] INFO  com.qa.util.MySeleniumListener - Sending keys [Ljava.lang.CharSequence;@7282af25 to element: [[ChromeDriver: chrome on windows (342d3d71a6dc740f9a045135862d3e12)] -> id: input-email]

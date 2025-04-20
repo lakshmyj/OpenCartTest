@@ -1,0 +1,9 @@
+21:30:22.966 [main] INFO  com.qa.util.MySeleniumListener - Sent keys [Ljava.lang.CharSequence;@7282af25 to element: [[ChromeDriver: chrome on windows (342d3d71a6dc740f9a045135862d3e12)] -> id: input-email]
+21:30:22.976 [main] INFO  com.qa.util.MySeleniumListener - Finding element By.id: input-password
+21:30:23.020 [main] INFO  com.qa.util.MySeleniumListener - Found element By.id: input-password
+21:30:23.022 [main] INFO  com.qa.util.MySeleniumListener - Sending keys [Ljava.lang.CharSequence;@177ede17 to element: [[ChromeDriver: chrome on windows (342d3d71a6dc740f9a045135862d3e12)] -> id: input-password]
+21:30:23.235 [main] INFO  com.qa.util.MySeleniumListener - Sent keys [Ljava.lang.CharSequence;@177ede17 to element: [[ChromeDriver: chrome on windows (342d3d71a6dc740f9a045135862d3e12)] -> id: input-password]
+21:30:23.239 [main] INFO  com.qa.util.MySeleniumListener - Finding element By.xpath: //button[normalize-space()='Login']
+21:30:23.274 [main] INFO  com.qa.util.MySeleniumListener - Found element By.xpath: //button[normalize-space()='Login']
+21:30:23.307 [main] INFO  com.qa.util.MySeleniumListener - Finding element By.xpath: //button[normalize-space()='Login']
+21:30:23.356 [main] INFO  com.qa.util.MySeleniumListener - Found element By.xpath: //button[normalize-space()='Login']

@@ -22,14 +22,17 @@ public class HomePage extends BaseClass{
 	public HomePage()
 	{
 		//System.out.println("HomePage constructor");
-		PageFactory.initElements(driver,this);
+	//	PageFactory.initElements(driver,this);
+		PageFactory.initElements(BaseClass.getDriver(),this);
 	}
 	
 	//Actions
 	public String validateHomePageTitle()
 	{
-		System.out.println("home title "+driver.getTitle());
-		return driver.getTitle();
+		System.out.println("home title "+BaseClass.getDriver().getTitle());
+		return BaseClass.getDriver().getTitle();
+//		System.out.println("home title "+driver.getTitle());
+//		return driver.getTitle();
 	}
 	
 	public void clickMyAccountOptions()

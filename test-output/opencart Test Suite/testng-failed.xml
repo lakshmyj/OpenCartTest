@@ -6,13 +6,13 @@
   </listeners>
   <test thread-count="5" name="All Test(failed)">
     <classes>
-      <class name="com.qa.testcases.MyAccountPageTest">
+      <class name="com.qa.testcases.AccountLoginPageTest">
         <methods>
           <include name="setUp"/>
-          <include name="myAccountsPageTitleTest"/>
+          <include name="loginTest" invocation-numbers="2"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.qa.testcases.MyAccountPageTest -->
+      </class> <!-- com.qa.testcases.AccountLoginPageTest -->
     </classes>
   </test> <!-- All Test(failed) -->
 </suite> <!-- Failed suite [opencart Test Suite] -->

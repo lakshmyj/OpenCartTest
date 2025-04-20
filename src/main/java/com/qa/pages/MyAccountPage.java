@@ -17,14 +17,16 @@ public class MyAccountPage extends BaseClass{
 	public MyAccountPage()
 	{
 		//System.out.println("myaccountpage constructor");
-		PageFactory.initElements(driver,this);
+		PageFactory.initElements(BaseClass.getDriver(),this);
+//		PageFactory.initElements(driver,this);
 		
 	}
 	
 	//Actions
 	public String validateMyAccountsPageTitle()
 	{
-		return driver.getTitle();
+		return BaseClass.getDriver().getTitle();
+//		return driver.getTitle();
 	}
 	
 	public boolean isMyAccountHeadingPresent()

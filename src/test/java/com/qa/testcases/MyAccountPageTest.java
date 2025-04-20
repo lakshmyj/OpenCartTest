@@ -24,7 +24,7 @@ public class MyAccountPageTest extends BaseClass{
 	@BeforeMethod
 	public void setUp()
 	{
-		initialization();
+		super.setUp();
 		myaccountpage = new MyAccountPage();
 		homepage = new HomePage();
 		homepage.clickMyAccountOptions();
@@ -37,12 +37,6 @@ public class MyAccountPageTest extends BaseClass{
 	{
 		Thread.sleep(2000);
 		Assert.assertEquals(myaccountpage.validateMyAccountsPageTitle(),"My Account","My Accounts Page Title Mismatch");
-	}
-	
-	@AfterMethod
-	public void tearDown()
-	{
-		driver.quit();
 	}
 	
 }

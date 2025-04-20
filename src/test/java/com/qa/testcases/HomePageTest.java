@@ -20,7 +20,8 @@ public class HomePageTest extends BaseClass{
 	@BeforeMethod
 	public void setUp()
 	{
-		initialization();
+		//initialization();
+		super.setUp();
 		homepage = new HomePage();
 	}
 	
@@ -30,11 +31,11 @@ public class HomePageTest extends BaseClass{
 		Assert.assertEquals(homepage.validateHomePageTitle(),"Your Store","HomePage Title Mismatch");
 	}
 	
-	@AfterMethod
-	public void tearDown()
-	{
-		driver.quit();
-	}
+//	@AfterMethod
+//	public void tearDown()
+//	{
+//		driver.quit();
+//	}
 	
 	
 }

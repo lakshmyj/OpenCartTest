@@ -28,7 +28,7 @@ public class AccountLoginPageTest extends BaseClass{
 	@BeforeMethod
 	public void setUp()
 	{
-		initialization();
+		super.setUp();
 		accountloginpage = new AccountLoginPage();
 		homepage = new HomePage();
 		homepage.clickMyAccountOptions();
@@ -63,11 +63,5 @@ public class AccountLoginPageTest extends BaseClass{
 			Assert.assertEquals("Invalid",expectedResult);
 		}
 	}
-	
-	@AfterMethod
-	public void tearDown()
-	{
-		driver.quit();
-	}
-	
+
 }

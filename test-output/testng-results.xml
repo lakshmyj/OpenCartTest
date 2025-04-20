@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-19T00:52:24 PDT" name="opencart Test Suite" finished-at="2025-04-19T00:53:17 PDT" duration-ms="52931">
+  <suite started-at="2025-04-19T21:29:17 PDT" name="opencart Test Suite" finished-at="2025-04-19T21:30:26 PDT" duration-ms="69543">
     <groups>
     </groups>
-    <test started-at="2025-04-19T00:52:24 PDT" name="All Test" finished-at="2025-04-19T00:53:17 PDT" duration-ms="52931">
+    <test started-at="2025-04-19T21:29:17 PDT" name="All Test" finished-at="2025-04-19T21:30:26 PDT" duration-ms="69543">
       <class name="com.qa.testcases.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.HomePageTest@1530c739]" started-at="2025-04-19T00:52:24 PDT" name="setUp" finished-at="2025-04-19T00:52:28 PDT" duration-ms="3681" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.HomePageTest@20f12539]" started-at="2025-04-19T21:29:17 PDT" name="setUp" finished-at="2025-04-19T21:29:26 PDT" duration-ms="8495" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="homePageTitleTest()[pri:0, instance:com.qa.testcases.HomePageTest@1530c739]" started-at="2025-04-19T00:52:28 PDT" name="homePageTitleTest" finished-at="2025-04-19T00:52:28 PDT" duration-ms="56" status="PASS">
+        <test-method signature="homePageTitleTest()[pri:0, instance:com.qa.testcases.HomePageTest@20f12539]" started-at="2025-04-19T21:29:26 PDT" name="homePageTitleTest" finished-at="2025-04-19T21:29:26 PDT" duration-ms="63" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageTitleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testcases.HomePageTest@1530c739]" started-at="2025-04-19T00:52:28 PDT" name="tearDown" finished-at="2025-04-19T00:52:29 PDT" duration-ms="974" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testcases.HomePageTest@20f12539]" started-at="2025-04-19T21:29:26 PDT" name="tearDown" finished-at="2025-04-19T21:29:27 PDT" duration-ms="1402" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.testcases.HomePageTest -->
       <class name="com.qa.testcases.MyAccountPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.MyAccountPageTest@35dab4eb]" started-at="2025-04-19T00:53:10 PDT" name="setUp" finished-at="2025-04-19T00:53:14 PDT" duration-ms="4167" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.MyAccountPageTest@6eeade6c]" started-at="2025-04-19T21:30:17 PDT" name="setUp" finished-at="2025-04-19T21:30:23 PDT" duration-ms="5872" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="myAccountsPageTitleTest()[pri:0, instance:com.qa.testcases.MyAccountPageTest@35dab4eb]" started-at="2025-04-19T00:53:14 PDT" name="myAccountsPageTitleTest" finished-at="2025-04-19T00:53:16 PDT" duration-ms="2025" status="PASS">
+        <test-method signature="myAccountsPageTitleTest()[pri:0, instance:com.qa.testcases.MyAccountPageTest@6eeade6c]" started-at="2025-04-19T21:30:23 PDT" name="myAccountsPageTitleTest" finished-at="2025-04-19T21:30:25 PDT" duration-ms="2038" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myAccountsPageTitleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testcases.MyAccountPageTest@35dab4eb]" started-at="2025-04-19T00:53:16 PDT" name="tearDown" finished-at="2025-04-19T00:53:17 PDT" duration-ms="887" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testcases.MyAccountPageTest@6eeade6c]" started-at="2025-04-19T21:30:25 PDT" name="tearDown" finished-at="2025-04-19T21:30:26 PDT" duration-ms="1270" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.testcases.MyAccountPageTest -->
       <class name="com.qa.testcases.AccountLoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.AccountLoginPageTest@8519cb4]" started-at="2025-04-19T00:52:30 PDT" name="setUp" finished-at="2025-04-19T00:52:34 PDT" duration-ms="4390" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.AccountLoginPageTest@75f65e45]" started-at="2025-04-19T21:29:29 PDT" name="setUp" finished-at="2025-04-19T21:29:35 PDT" duration-ms="6846" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.qa.testcases.AccountLoginPageTest@8519cb4]" started-at="2025-04-19T00:52:34 PDT" name="loginTest" data-provider="getLoginTestData" finished-at="2025-04-19T00:52:45 PDT" duration-ms="10825" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.qa.testcases.AccountLoginPageTest@75f65e45]" started-at="2025-04-19T21:29:35 PDT" name="loginTest" data-provider="getLoginTestData" finished-at="2025-04-19T21:29:47 PDT" duration-ms="11290" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -60,15 +60,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testcases.AccountLoginPageTest@8519cb4]" started-at="2025-04-19T00:52:45 PDT" name="tearDown" finished-at="2025-04-19T00:52:46 PDT" duration-ms="1207" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testcases.AccountLoginPageTest@75f65e45]" started-at="2025-04-19T21:29:47 PDT" name="tearDown" finished-at="2025-04-19T21:29:48 PDT" duration-ms="884" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.AccountLoginPageTest@8519cb4]" started-at="2025-04-19T00:52:46 PDT" name="setUp" finished-at="2025-04-19T00:52:51 PDT" duration-ms="4855" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.AccountLoginPageTest@75f65e45]" started-at="2025-04-19T21:29:48 PDT" name="setUp" finished-at="2025-04-19T21:29:53 PDT" duration-ms="5369" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.qa.testcases.AccountLoginPageTest@8519cb4]" started-at="2025-04-19T00:52:51 PDT" name="loginTest" data-provider="getLoginTestData" finished-at="2025-04-19T00:52:53 PDT" duration-ms="1816" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.qa.testcases.AccountLoginPageTest@75f65e45]" started-at="2025-04-19T21:29:53 PDT" name="loginTest" data-provider="getLoginTestData" finished-at="2025-04-19T21:29:56 PDT" duration-ms="3124" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -89,15 +89,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testcases.AccountLoginPageTest@8519cb4]" started-at="2025-04-19T00:52:53 PDT" name="tearDown" finished-at="2025-04-19T00:52:54 PDT" duration-ms="1039" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testcases.AccountLoginPageTest@75f65e45]" started-at="2025-04-19T21:29:56 PDT" name="tearDown" finished-at="2025-04-19T21:29:58 PDT" duration-ms="2045" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.AccountLoginPageTest@8519cb4]" started-at="2025-04-19T00:52:54 PDT" name="setUp" finished-at="2025-04-19T00:52:58 PDT" duration-ms="4198" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.AccountLoginPageTest@75f65e45]" started-at="2025-04-19T21:29:58 PDT" name="setUp" finished-at="2025-04-19T21:30:04 PDT" duration-ms="6215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.qa.testcases.AccountLoginPageTest@8519cb4]" started-at="2025-04-19T00:52:58 PDT" name="loginTest" data-provider="getLoginTestData" finished-at="2025-04-19T00:53:09 PDT" duration-ms="10517" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.qa.testcases.AccountLoginPageTest@75f65e45]" started-at="2025-04-19T21:30:04 PDT" name="loginTest" data-provider="getLoginTestData" finished-at="2025-04-19T21:30:15 PDT" duration-ms="10888" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -111,14 +111,58 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[Invalid]]>
+                <![CDATA[Valid]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Valid] but found [Invalid]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Valid] but found [Invalid]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.qa.testcases.AccountLoginPageTest.loginTest(AccountLoginPageTest.java:63)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testcases.AccountLoginPageTest@8519cb4]" started-at="2025-04-19T00:53:09 PDT" name="tearDown" finished-at="2025-04-19T00:53:10 PDT" duration-ms="1028" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testcases.AccountLoginPageTest@75f65e45]" started-at="2025-04-19T21:30:16 PDT" name="tearDown" finished-at="2025-04-19T21:30:17 PDT" duration-ms="1133" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

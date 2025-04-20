@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-opencart_Test_Suite" class="navigator-link">
-              <span class="suite-name border-passed">opencart Test Suite</span>
+              <span class="suite-name border-failed">opencart Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-opencart_Test_Suite" class="hide-methods failed suite-opencart_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-opencart_Test_Suite -->
+                      <a href="#" panel-name="suite-opencart_Test_Suite" class="show-methods failed suite-opencart_Test_Suite"> (show)</a> <!-- show-methods failed suite-opencart_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-opencart_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-opencart_Test_Suite" title="com.qa.testcases.AccountLoginPageTest" class="method navigator-link" hash-for-method="loginTest(1234.0, test@123, Valid)">loginTest(1234.0, test@123, Valid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-opencart_Test_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -108,17 +122,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-opencart_Test_Suite" title="com.qa.testcases.AccountLoginPageTest" class="method navigator-link" hash-for-method="loginTest(lucky@gmail.com, lucky@123, Valid)">loginTest(lucky@gmail.com, lucky@123, Valid)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-opencart_Test_Suite" title="com.qa.testcases.AccountLoginPageTest" class="method navigator-link" hash-for-method="loginTest(abc897@yahoo.com, xyz345, Invalid)">loginTest(abc897@yahoo.com, xyz345, Invalid)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-opencart_Test_Suite" title="com.qa.testcases.AccountLoginPageTest" class="method navigator-link" hash-for-method="loginTest(1234.0, test@123, Invalid)">loginTest(1234.0, test@123, Invalid)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-opencart_Test_Suite" title="com.qa.testcases.AccountLoginPageTest" class="method navigator-link" hash-for-method="loginTest(lucky@gmail.com, lucky@123, Valid)">loginTest(lucky@gmail.com, lucky@123, Valid)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -138,6 +147,27 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-opencart_Test_Suite" class="panel opencart_Test_Suite">
+          <div class="suite-opencart_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.testcases.AccountLoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(1234.0, test@123, Valid)">
+                  </a> <!-- loginTest(1234.0, test@123, Valid) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(1234.0,test@123,Valid)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Valid] but found [Invalid]
+	at com.qa.testcases.AccountLoginPageTest.loginTest(AccountLoginPageTest.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-opencart_Test_Suite-class-failed -->
           <div class="suite-opencart_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -176,14 +206,6 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest(lucky@gmail.com, lucky@123, Valid)">
-                  </a> <!-- loginTest(lucky@gmail.com, lucky@123, Valid) -->
-                  <span class="method-name">loginTest</span>
-                  <span class="parameters">(lucky@gmail.com,lucky@123,Valid)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="loginTest(abc897@yahoo.com, xyz345, Invalid)">
                   </a> <!-- loginTest(abc897@yahoo.com, xyz345, Invalid) -->
                   <span class="method-name">loginTest</span>
@@ -192,10 +214,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest(1234.0, test@123, Invalid)">
-                  </a> <!-- loginTest(1234.0, test@123, Invalid) -->
+                  <a name="loginTest(lucky@gmail.com, lucky@123, Valid)">
+                  </a> <!-- loginTest(lucky@gmail.com, lucky@123, Valid) -->
                   <span class="method-name">loginTest</span>
-                  <span class="parameters">(1234.0,test@123,Invalid)</span>
+                  <span class="parameters">(lucky@gmail.com,lucky@123,Valid)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -261,28 +283,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginTest')
 data.setCell(0, 2, 'com.qa.testcases.AccountLoginPageTest')
-data.setCell(0, 3, 10825);
+data.setCell(0, 3, 11290);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'loginTest')
 data.setCell(1, 2, 'com.qa.testcases.AccountLoginPageTest')
-data.setCell(1, 3, 10517);
+data.setCell(1, 3, 10888);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'myAccountsPageTitleTest')
-data.setCell(2, 2, 'com.qa.testcases.MyAccountPageTest')
-data.setCell(2, 3, 2025);
+data.setCell(2, 1, 'loginTest')
+data.setCell(2, 2, 'com.qa.testcases.AccountLoginPageTest')
+data.setCell(2, 3, 3124);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'loginTest')
-data.setCell(3, 2, 'com.qa.testcases.AccountLoginPageTest')
-data.setCell(3, 3, 1816);
+data.setCell(3, 1, 'myAccountsPageTitleTest')
+data.setCell(3, 2, 'com.qa.testcases.MyAccountPageTest')
+data.setCell(3, 3, 2038);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'homePageTitleTest')
 data.setCell(4, 2, 'com.qa.testcases.HomePageTest')
-data.setCell(4, 3, 56);
+data.setCell(4, 3, 63);
 window.suiteTableData['opencart_Test_Suite']= { tableData: data, tableDiv: 'times-div-opencart_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 25 seconds</span>
+              <span class="suite-total-time">Total running time: 27 seconds</span>
               <div id="times-div-opencart_Test_Suite">
               </div> <!-- times-div-opencart_Test_Suite -->
             </div> <!-- times-div -->
@@ -315,65 +337,67 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">homePageTitleTest</span>
-                <span class="method-start">3683 ms</span>
+                <span class="method-start">8497 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">3760 ms</span>
+                <span class="method-start">8593 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.testcases.AccountLoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">5614 ms</span>
+                <span class="method-start">11409 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest(abc897@yahoo.com, xyz345, Invalid)</span>
-                <span class="method-start">10004 ms</span>
+                <span class="method-start">18255 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">20835 ms</span>
+                <span class="method-start">29547 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">22042 ms</span>
+                <span class="method-start">30432 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest(lucky@gmail.com, lucky@123, Valid)</span>
-                <span class="method-start">26899 ms</span>
+                <span class="method-start">35802 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">28724 ms</span>
+                <span class="method-start">38930 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">29764 ms</span>
+                <span class="method-start">40977 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginTest(1234.0, test@123, Invalid)</span>
-                <span class="method-start">33962 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginTest(1234.0, test@123, Valid)</span>
+                <span class="method-start">47192 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">44482 ms</span>
+                <span class="method-start">58787 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.testcases.MyAccountPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">45512 ms</span>
+                <span class="method-start">59922 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">myAccountsPageTitleTest</span>
-                <span class="method-start">49679 ms</span>
+                <span class="method-start">65794 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">51705 ms</span>
+                <span class="method-start">67838 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
