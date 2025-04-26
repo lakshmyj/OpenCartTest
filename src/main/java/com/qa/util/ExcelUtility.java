@@ -10,7 +10,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class ExcelUtility {
 
-	public static String TESTDATA_EXCEL_PATH=System.getProperty("user.dir")+"/src/main/java/com/qa/testdata/loginTestData.xlsx";
+	public static String TESTDATA_EXCEL_PATH=System.getProperty("user.dir")+"/src/test/resources/testdata/loginTestData.xlsx";
 	static Workbook book;
 	static Sheet sheet;
 	

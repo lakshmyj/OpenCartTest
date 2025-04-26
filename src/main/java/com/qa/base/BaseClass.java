@@ -35,7 +35,7 @@ public class BaseClass {
 		try
 		{
 			logger = LogManager.getLogger(this.getClass());
-			String propertiesFilePath=System.getProperty("user.dir")+"/src/main/java/com/qa/config/config.properties";
+			String propertiesFilePath=System.getProperty("user.dir")+"/src/test/resources/config/config.properties";
 			FileReader fr = new FileReader(propertiesFilePath);
 			propFile=new Properties();
 			propFile.load(fr);
