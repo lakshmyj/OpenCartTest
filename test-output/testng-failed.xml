@@ -4,17 +4,17 @@
   <listeners>
     <listener class-name="com.qa.extentreport.ExtentReportListener"/>
   </listeners>
-  <test thread-count="5" name="All Test(failed)">
+  <test thread-count="5" name="Chrome Test(failed)">
     <parameter name="browser" value="chrome"/>
     <parameter name="browserversion" value="135.0"/>
     <classes>
-      <class name="com.qa.testcases.TC03_MyAccountPageTest">
+      <class name="com.qa.testcases.TC02_LoginPageTest">
         <methods>
           <include name="tearDown"/>
+          <include name="loginTest" invocation-numbers="0 1 2"/>
           <include name="setUp"/>
-          <include name="myAccountsPageTitleTest"/>
         </methods>
-      </class> <!-- com.qa.testcases.TC03_MyAccountPageTest -->
+      </class> <!-- com.qa.testcases.TC02_LoginPageTest -->
     </classes>
-  </test> <!-- All Test(failed) -->
+  </test> <!-- Chrome Test(failed) -->
 </suite> <!-- Failed suite [opencart Test Suite] -->
