@@ -19,7 +19,7 @@ public class ExcelUtility {
 		try
 		{
 			file= new FileInputStream(TESTDATA_EXCEL_PATH);
-			System.out.println(TESTDATA_EXCEL_PATH);
+			//System.out.println(TESTDATA_EXCEL_PATH);
 			book = WorkbookFactory.create(file);
 			sheet=book.getSheet(sheetName);
 		}

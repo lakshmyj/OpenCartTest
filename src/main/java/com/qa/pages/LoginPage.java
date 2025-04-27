@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.qa.base.BasePage;
 
-public class AccountLoginPage extends BasePage{
+public class LoginPage extends BasePage{
 
 	//Page Factory
 	@FindBy(id="input-email")
@@ -21,33 +21,23 @@ public class AccountLoginPage extends BasePage{
 	WebElement login_button;
 	
 	//Initializing Page Objects
-	public AccountLoginPage(WebDriver driver)
+	public LoginPage(WebDriver driver)
 	{
 		super(driver);
-		//System.out.println("Pagefactory initialization of AccountLoginPage inside self constructor");
-		//PageFactory.initElements(driver,this);
-		//PageFactory.initElements(BasePage.getDriver(),this);
 	}
 	
 	//Actions
-	public String validateAccountsPageTitle()
+	public String getLoginPageTitle()
 	{
-		System.out.println("account login title "+driver.getTitle());
 		return driver.getTitle();
-//		System.out.println("account login title "+BasePage.getDriver().getTitle());
-//		return BasePage.getDriver().getTitle();
 	}
 	
 	public MyAccountPage login(String uname,String password)
 	{
-		//System.out.println("acclogin page login "+"uname "+uname+" password "+password);
 		login_email.sendKeys(uname);
 		login_password.sendKeys(password);
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", login_button);
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", login_button);	
-//		((JavascriptExecutor) BasePage.getDriver()).executeScript("arguments[0].scrollIntoView(true);", login_button);
-//		((JavascriptExecutor) BasePage.getDriver()).executeScript("arguments[0].click();", login_button);	
-		//return new MyAccountPage();
 		return new MyAccountPage(driver);
 		
 	}

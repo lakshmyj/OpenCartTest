@@ -7,39 +7,46 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.qa.base.BaseTest;
-import com.qa.pages.AccountLoginPage;
+import com.qa.pages.LoginPage;
 import com.qa.pages.HomePage;
 import com.qa.pages.MyAccountPage;
 import com.qa.util.ExcelUtility;
 
-public class AccountLoginPageTest extends BaseTest{
+public class TC02_LoginPageTest extends BaseTest{
 
-	public AccountLoginPage accountloginpage;
+	public LoginPage loginpage;
 	public MyAccountPage myaccountpage;
-	public HomePage homepage;
+	//public HomePage homePage;
 	
 	String sheetName="loginData";
 	
-	public AccountLoginPageTest()
-	{
-		super();
-	}
+//	public TC02_LoginPageTest()
+//	{
+//		super();
+//	}
 	
-	@BeforeMethod
-	public void setUp()
-	{
-//		super.setUp();
-//		accountloginpage = new AccountLoginPage();
-//		homepage = new HomePage();
-//		homepage.clickMyAccountOptions();
-//		accountloginpage = homepage.clickOnLoginOption();
+//	@BeforeMethod
+//	public void setUp()
+//	{
+////		super.setUp();
+////		accountloginpage = new AccountLoginPage();
+////		homepage = new HomePage();
+////		homepage.clickMyAccountOptions();
+////		accountloginpage = homepage.clickOnLoginOption();
+//	}
+	
+	public void landOnLoginPage() { 
+		homePage.clickMyAccountOptions();
+		loginpage = homePage.clickOnLoginOption();
 	}
 	
 	@Test(priority=1)
-//	public void accountLoginPageTitleTest()
-//	{
-//		Assert.assertEquals(accountloginpage.validateAccountsPageTitle(),"Account Login","Account Login Page Title Mismatch");
-//	}
+	public void loginPageTitleTest() throws InterruptedException
+	{
+		landOnLoginPage();
+		Thread.sleep(2000);
+		Assert.assertEquals(loginpage.getLoginPageTitle(),"Account Login","Account Login Page Title Mismatch");
+	}
 	
 	@DataProvider
 	public Object[][] getLoginTestData() {
@@ -50,9 +57,9 @@ public class AccountLoginPageTest extends BaseTest{
 	@Test(priority=2, dataProvider="getLoginTestData")
 	public void loginTest(String username, String password, String expectedResult) throws InterruptedException
 	{
-		//myaccountpage = accountloginpage.login(propFile.getProperty("username"), propFile.getProperty("password"));
-		myaccountpage = accountloginpage.login(username,password);
-		
+		landOnLoginPage();
+		myaccountpage = loginpage.login(username,password);
+		Thread.sleep(2000);
 		if(myaccountpage.isMyAccountHeadingPresent())
 		{
 			if(myaccountpage.getMyAccountHeading().equals("My Account"))

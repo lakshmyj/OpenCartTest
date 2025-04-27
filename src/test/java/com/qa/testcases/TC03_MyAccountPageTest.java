@@ -6,35 +6,26 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.qa.base.BaseTest;
-import com.qa.pages.AccountLoginPage;
+import com.qa.pages.LoginPage;
 import com.qa.pages.HomePage;
 import com.qa.pages.MyAccountPage;
 
-public class MyAccountPageTest extends BaseTest{
+public class TC03_MyAccountPageTest extends BaseTest{
 
 	public MyAccountPage myaccountpage;
 	public HomePage homepage;
-	public AccountLoginPage accountloginpage;
+	public LoginPage loginpage;
 	
-	public MyAccountPageTest()
-	{
-		super();
-	}
-	
-	@BeforeMethod
-	public void setUp()
-	{
-//		super.setUp();
-//		myaccountpage = new MyAccountPage();
-//		homepage = new HomePage();
-//		homepage.clickMyAccountOptions();
-//		accountloginpage = homepage.clickOnLoginOption();
-//		myaccountpage = accountloginpage.login(propFile.getProperty("username"), propFile.getProperty("password"));
+	public void landOnMyAccountsPage() { 
+		homePage.clickMyAccountOptions();
+		loginpage = homePage.clickOnLoginOption();
+		myaccountpage = loginpage.login("lucky@gmail.com","lucky@123");
 	}
 	
 	@Test
 	public void myAccountsPageTitleTest() throws InterruptedException
 	{
+		landOnMyAccountsPage();
 		Thread.sleep(2000);
 		Assert.assertEquals(myaccountpage.validateMyAccountsPageTitle(),"My Account","My Accounts Page Title Mismatch");
 	}

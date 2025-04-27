@@ -23,19 +23,12 @@ public class HomePage extends BasePage{
 	public HomePage(WebDriver driver)
 	{
 		super(driver);
-		//System.out.println("HomePage constructor");
-	//	PageFactory.initElements(driver,this);
-//		this.driver = driver;
-//		PageFactory.initElements(driver,this);
 	}
 	
 	//Actions
 	public String validateHomePageTitle()
 	{
-		System.out.println("home title "+driver.getTitle());
 		return driver.getTitle();
-//		System.out.println("home title "+driver.getTitle());
-//		return driver.getTitle();
 	}
 	
 	public void clickMyAccountOptions()
@@ -43,10 +36,9 @@ public class HomePage extends BasePage{
 		myAccount.click();
 	}
 	
-	public AccountLoginPage clickOnLoginOption()
+	public LoginPage clickOnLoginOption()
 	{
 		loginButton.click();
-//		return new AccountLoginPage();
-		return new AccountLoginPage(driver);
+		return new LoginPage(driver);
 	}
 }

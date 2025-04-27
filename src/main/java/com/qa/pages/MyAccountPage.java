@@ -18,16 +18,11 @@ public class MyAccountPage extends BasePage{
 	public MyAccountPage(WebDriver driver)
 	{
 		super(driver);
-		//System.out.println("myaccountpage constructor");
-		//PageFactory.initElements(BasePage.getDriver(),this);
-//		PageFactory.initElements(driver,this);
-		
 	}
 	
 	//Actions
 	public String validateMyAccountsPageTitle()
 	{
-//		return BasePage.getDriver().getTitle();
 		return driver.getTitle();
 	}
 	

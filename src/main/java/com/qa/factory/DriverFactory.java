@@ -35,8 +35,8 @@ public class DriverFactory {
 		logger = LogManager.getLogger(this.getClass());
 		String browserName = propertyFile.getProperty("browser");
 		String executionEnv = propertyFile.getProperty("executionEnv");
-		System.out.println("browser name is : " + browserName);
-		System.out.println("executionEnv is : " + executionEnv);
+//		System.out.println("browser name is : " + browserName);
+//		System.out.println("executionEnv is : " + executionEnv);
 		optionsManager = new OptionsManager(propertyFile);
 
 		switch (browserName.toLowerCase().trim()) {
@@ -86,7 +86,7 @@ public class DriverFactory {
 		getDriver().get(propertyFile.getProperty("appURL"));
 		getDriver().manage().window().maximize();
 		getDriver().manage().deleteAllCookies();
-		System.out.println("Processed OptionsManager and returning driver");
+		//System.out.println("Processed OptionsManager and returning driver");
 		return getDriver();
 
 	}

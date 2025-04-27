@@ -3,7 +3,9 @@ package com.qa.base;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
@@ -17,7 +19,7 @@ public class BaseTest {
 	protected Properties propertyFile;
 	public HomePage homePage;
 	
-	@BeforeTest
+	@BeforeMethod
 	@Parameters({"browser", "browserversion"})
 	public void setUp(String browserName, String browserVersion) 
 	{
@@ -40,7 +42,7 @@ public class BaseTest {
 	homePage = new HomePage(driver);
 	}
 	
-	@AfterTest
+	@AfterMethod
 	public void tearDown()
 	{
 		driver.quit();

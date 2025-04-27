@@ -37,31 +37,6 @@ public class BasePage {
 		
 	}
 	
-	
-//	public BasePage()
-//	{
-//		try
-//		{
-//			
-//			String propertiesFilePath=System.getProperty("user.dir")+"/src/test/resources/config/config.properties";
-//			FileReader fr = new FileReader(propertiesFilePath);
-//			propFile=new Properties();
-//			propFile.load(fr);
-//			//System.out.println("BaseClass constructor: Reading properties file");
-//		}
-//		catch(FileNotFoundException e)
-//		{
-//			e.printStackTrace();
-//		}
-//		catch(IOException e)
-//		{
-//			e.printStackTrace();
-//		}
-//		catch(Exception e)
-//		{
-//			e.printStackTrace();
-//		}
-//	}
 //	public void initialization()
 //	{
 //		
@@ -85,23 +60,5 @@ public class BasePage {
 ////		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(TestUtils.IMPLICIT_WAIT_DURATION));
 //
 //	}
-//	
-//	 public static WebDriver getDriver() {
-//	        return tldriver.get();
-//	    }
-//	
-//	@BeforeMethod
-//	public void setUp()
-//	{
-//		initialization();
-//	}
-//	
-//	@AfterMethod
-//	public void tearDown()
-//	{
-//		getDriver().quit();
-//		//driver.quit();
-//		tldriver.remove();
-//	}
-//	
+
 }
