@@ -5,12 +5,12 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.qa.base.BaseClass;
+import com.qa.base.BaseTest;
 import com.qa.pages.AccountLoginPage;
 import com.qa.pages.HomePage;
 import com.qa.pages.MyAccountPage;
 
-public class MyAccountPageTest extends BaseClass{
+public class MyAccountPageTest extends BaseTest{
 
 	public MyAccountPage myaccountpage;
 	public HomePage homepage;
@@ -24,12 +24,12 @@ public class MyAccountPageTest extends BaseClass{
 	@BeforeMethod
 	public void setUp()
 	{
-		super.setUp();
-		myaccountpage = new MyAccountPage();
-		homepage = new HomePage();
-		homepage.clickMyAccountOptions();
-		accountloginpage = homepage.clickOnLoginOption();
-		myaccountpage = accountloginpage.login(propFile.getProperty("username"), propFile.getProperty("password"));
+//		super.setUp();
+//		myaccountpage = new MyAccountPage();
+//		homepage = new HomePage();
+//		homepage.clickMyAccountOptions();
+//		accountloginpage = homepage.clickOnLoginOption();
+//		myaccountpage = accountloginpage.login(propFile.getProperty("username"), propFile.getProperty("password"));
 	}
 	
 	@Test

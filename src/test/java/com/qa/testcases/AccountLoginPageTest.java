@@ -6,13 +6,13 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.qa.base.BaseClass;
+import com.qa.base.BaseTest;
 import com.qa.pages.AccountLoginPage;
 import com.qa.pages.HomePage;
 import com.qa.pages.MyAccountPage;
 import com.qa.util.ExcelUtility;
 
-public class AccountLoginPageTest extends BaseClass{
+public class AccountLoginPageTest extends BaseTest{
 
 	public AccountLoginPage accountloginpage;
 	public MyAccountPage myaccountpage;
@@ -28,11 +28,11 @@ public class AccountLoginPageTest extends BaseClass{
 	@BeforeMethod
 	public void setUp()
 	{
-		super.setUp();
-		accountloginpage = new AccountLoginPage();
-		homepage = new HomePage();
-		homepage.clickMyAccountOptions();
-		accountloginpage = homepage.clickOnLoginOption();
+//		super.setUp();
+//		accountloginpage = new AccountLoginPage();
+//		homepage = new HomePage();
+//		homepage.clickMyAccountOptions();
+//		accountloginpage = homepage.clickOnLoginOption();
 	}
 	
 	@Test(priority=1)

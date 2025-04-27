@@ -1,13 +1,14 @@
 package com.qa.pages;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.qa.base.BaseClass;
+import com.qa.base.BasePage;
 
-public class AccountLoginPage extends BaseClass{
+public class AccountLoginPage extends BasePage{
 
 	//Page Factory
 	@FindBy(id="input-email")
@@ -20,20 +21,21 @@ public class AccountLoginPage extends BaseClass{
 	WebElement login_button;
 	
 	//Initializing Page Objects
-	public AccountLoginPage()
+	public AccountLoginPage(WebDriver driver)
 	{
+		super(driver);
 		//System.out.println("Pagefactory initialization of AccountLoginPage inside self constructor");
 		//PageFactory.initElements(driver,this);
-		PageFactory.initElements(BaseClass.getDriver(),this);
+		//PageFactory.initElements(BasePage.getDriver(),this);
 	}
 	
 	//Actions
 	public String validateAccountsPageTitle()
 	{
-//		System.out.println("account login title "+driver.getTitle());
-//		return driver.getTitle();
-		System.out.println("account login title "+BaseClass.getDriver().getTitle());
-		return BaseClass.getDriver().getTitle();
+		System.out.println("account login title "+driver.getTitle());
+		return driver.getTitle();
+//		System.out.println("account login title "+BasePage.getDriver().getTitle());
+//		return BasePage.getDriver().getTitle();
 	}
 	
 	public MyAccountPage login(String uname,String password)
@@ -41,11 +43,12 @@ public class AccountLoginPage extends BaseClass{
 		//System.out.println("acclogin page login "+"uname "+uname+" password "+password);
 		login_email.sendKeys(uname);
 		login_password.sendKeys(password);
-//		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", login_button);
-//		((JavascriptExecutor) driver).executeScript("arguments[0].click();", login_button);	
-		((JavascriptExecutor) BaseClass.getDriver()).executeScript("arguments[0].scrollIntoView(true);", login_button);
-		((JavascriptExecutor) BaseClass.getDriver()).executeScript("arguments[0].click();", login_button);	
-		return new MyAccountPage();
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", login_button);
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", login_button);	
+//		((JavascriptExecutor) BasePage.getDriver()).executeScript("arguments[0].scrollIntoView(true);", login_button);
+//		((JavascriptExecutor) BasePage.getDriver()).executeScript("arguments[0].click();", login_button);	
+		//return new MyAccountPage();
+		return new MyAccountPage(driver);
 		
 	}
 	

@@ -13,9 +13,10 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.qa.base.BaseClass;
+import com.qa.base.BasePage;
 
-public class TestUtils extends BaseClass{
+//public class TestUtils extends BasePage{
+public class TestUtils{
 
 	public static long PAGE_LOAD_TIMEOUT = 15;
 	public static long IMPLICIT_WAIT_DURATION = 10;

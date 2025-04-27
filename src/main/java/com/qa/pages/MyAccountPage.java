@@ -1,23 +1,25 @@
 package com.qa.pages;
 
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.qa.base.BaseClass;
+import com.qa.base.BasePage;
 
-public class MyAccountPage extends BaseClass{
+public class MyAccountPage extends BasePage{
 
 	//PageFactory
 	@FindBy(xpath="//div[@id='content']/h1")
 	WebElement myAccountHeading;
 	
 	//Initializing Page Objects
-	public MyAccountPage()
+	public MyAccountPage(WebDriver driver)
 	{
+		super(driver);
 		//System.out.println("myaccountpage constructor");
-		PageFactory.initElements(BaseClass.getDriver(),this);
+		//PageFactory.initElements(BasePage.getDriver(),this);
 //		PageFactory.initElements(driver,this);
 		
 	}
@@ -25,8 +27,8 @@ public class MyAccountPage extends BaseClass{
 	//Actions
 	public String validateMyAccountsPageTitle()
 	{
-		return BaseClass.getDriver().getTitle();
-//		return driver.getTitle();
+//		return BasePage.getDriver().getTitle();
+		return driver.getTitle();
 	}
 	
 	public boolean isMyAccountHeadingPresent()

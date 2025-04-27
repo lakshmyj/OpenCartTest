@@ -1,12 +1,13 @@
 package com.qa.pages;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.qa.base.BaseClass;
+import com.qa.base.BasePage;
 
-public class HomePage extends BaseClass{
+public class HomePage extends BasePage{
 	
 	//PageFactory
 	@FindBy(xpath="//img[@title='Your Store']")
@@ -19,18 +20,20 @@ public class HomePage extends BaseClass{
 	WebElement loginButton;
 	
 	//Initializing Page Objects
-	public HomePage()
+	public HomePage(WebDriver driver)
 	{
+		super(driver);
 		//System.out.println("HomePage constructor");
 	//	PageFactory.initElements(driver,this);
-		PageFactory.initElements(BaseClass.getDriver(),this);
+//		this.driver = driver;
+//		PageFactory.initElements(driver,this);
 	}
 	
 	//Actions
 	public String validateHomePageTitle()
 	{
-		System.out.println("home title "+BaseClass.getDriver().getTitle());
-		return BaseClass.getDriver().getTitle();
+		System.out.println("home title "+driver.getTitle());
+		return driver.getTitle();
 //		System.out.println("home title "+driver.getTitle());
 //		return driver.getTitle();
 	}
@@ -43,6 +46,7 @@ public class HomePage extends BaseClass{
 	public AccountLoginPage clickOnLoginOption()
 	{
 		loginButton.click();
-		return new AccountLoginPage();
+//		return new AccountLoginPage();
+		return new AccountLoginPage(driver);
 	}
 }

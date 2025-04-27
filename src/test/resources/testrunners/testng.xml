@@ -5,10 +5,12 @@
     <listener class-name="com.qa.extentreport.ExtentReportListener"/>
 </listeners>
   <test thread-count="5" name="All Test">
+	<parameter name="browser" value="chrome" />
+	<parameter name="browserversion" value="135.0" />
     <classes>
-	  <class name="com.qa.testcases.HomePageTest"/>
-      <class name="com.qa.testcases.AccountLoginPageTest"/>
-      <class name="com.qa.testcases.MyAccountPageTest"/>
+	  <class name="com.qa.testcases.sprint1.TC_HomePageTest_01"/>
+      <!--class name="com.qa.testcases.AccountLoginPageTest"/>
+      <class name="com.qa.testcases.MyAccountPageTest"/>-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
