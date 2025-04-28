@@ -1,5 +1,7 @@
 package com.qa.testcases;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -19,6 +21,7 @@ public class TC02_LoginPageTest extends BaseTest{
 	//public HomePage homePage;
 	
 	String sheetName="loginData";
+	private static Logger logger = LogManager.getLogger(TC02_LoginPageTest.class);
 	
 //	public TC02_LoginPageTest()
 //	{
@@ -43,6 +46,7 @@ public class TC02_LoginPageTest extends BaseTest{
 	@Test(priority=1)
 	public void loginPageTitleTest() throws InterruptedException
 	{
+		logger.info("verifying login page title");
 		landOnLoginPage();
 		Thread.sleep(2000);
 		Assert.assertEquals(loginpage.getLoginPageTitle(),"Account Login","Account Login Page Title Mismatch");

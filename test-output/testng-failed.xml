@@ -8,13 +8,13 @@
     <parameter name="browser" value="chrome"/>
     <parameter name="browserversion" value="135.0"/>
     <classes>
-      <class name="com.qa.testcases.TC02_LoginPageTest">
+      <class name="com.qa.testcases.TC01_HomePageTest">
         <methods>
           <include name="tearDown"/>
-          <include name="loginTest" invocation-numbers="0 1 2"/>
           <include name="setUp"/>
+          <include name="homePageTitleTest"/>
         </methods>
-      </class> <!-- com.qa.testcases.TC02_LoginPageTest -->
+      </class> <!-- com.qa.testcases.TC01_HomePageTest -->
     </classes>
   </test> <!-- Chrome Test(failed) -->
 </suite> <!-- Failed suite [opencart Test Suite] -->

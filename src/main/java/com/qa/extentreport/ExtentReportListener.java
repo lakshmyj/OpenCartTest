@@ -24,7 +24,8 @@ public class ExtentReportListener implements ITestListener{
 
 	public ExtentSparkReporter  sparkReporter;
 	public ExtentReports extentReport;
-	public ExtentTest extentTest;
+	//public ExtentTest extentTest;
+	private static ThreadLocal<ExtentTest> tlextentTest = new ThreadLocal<>();
 	String reportName;
 	
 	public void onStart(ITestContext testContext)
@@ -51,28 +52,37 @@ public class ExtentReportListener implements ITestListener{
 			extentReport.setSystemInfo("Test Groups",includedTestGroups.toString());
 	}
 	
+	  public void onTestStart(ITestResult result) {
+		  tlextentTest.set(extentReport.createTest(result.getTestClass().getName()));
+		  tlextentTest.get().assignCategory(result.getMethod().getGroups());
+	    }
+	
 	public void onTestSuccess(ITestResult result) 
 	{
-		extentTest = extentReport.createTest(result.getTestClass().getName());
-		extentTest.assignCategory(result.getMethod().getGroups());
-		extentTest.log(Status.PASS,result.getName()+" got successfully executed");
+//		extentTest = extentReport.createTest(result.getTestClass().getName());
+//		extentTest.assignCategory(result.getMethod().getGroups());
+//		extentTest.log(Status.PASS,result.getName()+" got successfully executed");
+		tlextentTest.get().log(Status.PASS,result.getName()+" got successfully executed");
 	}
 	
 	public void onTestFailure(ITestResult result)
 	{
 		//System.out.println("onfailure result obj "+result.toString());
 		WebDriver driver = DriverFactory.getDriver();
-		extentTest = extentReport.createTest(result.getClass().getName());
-		extentTest.assignCategory(result.getMethod().getGroups());
-		extentTest.log(Status.FAIL,result.getName()+" got failed");
-		extentTest.log(Status.INFO,result.getThrowable().getMessage());
+//		extentTest = extentReport.createTest(result.getClass().getName());
+//		extentTest.assignCategory(result.getMethod().getGroups());
+//		extentTest.log(Status.FAIL,result.getName()+" got failed");
+//		extentTest.log(Status.INFO,result.getThrowable().getMessage());
+		tlextentTest.get().log(Status.FAIL,result.getName()+" got failed");
+		tlextentTest.get().log(Status.INFO,result.getThrowable().getMessage());
 		try
 		{
 			String imgPath = TestUtils.captureScreen(result.getName());
 			//System.out.println(" er imgPath "+imgPath);
 			//String imgPath = TestUtils.takeScreenShot(driver,result.getName());
 			//String imgPath = TestUtils.getScreenshot(result.getName());
-			extentTest.addScreenCaptureFromPath(imgPath);
+			//extentTest.addScreenCaptureFromPath(imgPath);
+			tlextentTest.get().addScreenCaptureFromPath(imgPath);
 		}
 		catch(Exception e)
 		{
@@ -81,10 +91,13 @@ public class ExtentReportListener implements ITestListener{
 	}
 	public void onTestSkip(ITestResult result)
 	{
-		extentTest=extentReport.createTest(result.getClass().getName());
-		extentTest.assignCategory(result.getMethod().getGroups());
-		extentTest.log(Status.SKIP,result.getName()+" got skipped");
-		extentTest.log(Status.INFO,result.getThrowable().getMessage());
+//		extentTest=extentReport.createTest(result.getClass().getName());
+//		extentTest.assignCategory(result.getMethod().getGroups());
+//		extentTest.log(Status.SKIP,result.getName()+" got skipped");
+//		extentTest.log(Status.INFO,result.getThrowable().getMessage());
+		
+		tlextentTest.get().log(Status.SKIP,result.getName()+" got skipped");
+		tlextentTest.get().log(Status.INFO,result.getThrowable().getMessage());
 	}
 	public void onFinish(ITestContext testContext)
 	{
@@ -127,6 +140,10 @@ public class ExtentReportListener implements ITestListener{
 //		}
 		/*Send the report as email as soon as it is generated --end*/
 		
+		 
 	}
 	
+	public static ExtentTest getExtentTest() {
+        return tlextentTest.get();
+    }
 }

@@ -2,6 +2,8 @@ package com.qa.base;
 
 import java.util.Properties;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -18,11 +20,13 @@ public class BaseTest {
 	DriverFactory driverFactory;
 	protected Properties propertyFile;
 	public HomePage homePage;
+	private static Logger logger;
 	
 	@BeforeMethod
 	@Parameters({"browser", "browserversion"})
 	public void setUp(String browserName, String browserVersion) 
 	{
+		logger = LogManager.getLogger(this.getClass());
 		driverFactory = new DriverFactory();
 		propertyFile = driverFactory.initProp();	
 		
